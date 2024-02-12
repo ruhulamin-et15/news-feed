@@ -14,17 +14,17 @@ export default function TopHeadline() {
       <div className="col-span-12 lg:col-span-4">
         <a href="#">
           <h3 className="mb-2.5 text-2xl font-bold lg:text-[28px]">
-            {newsData[2]?.title}
+            {newsData[9]?.title}
           </h3>
         </a>
-        <p className="text-base text-[#5C5955]">{newsData[2]?.description}</p>
+        <p className="text-base text-[#5C5955]">{newsData[9]?.description}</p>
         <p className="mt-5 text-base text-[#5C5955]">
-          {shortFormatDate(newsData[2]?.publishedAt)}
+          {shortFormatDate(newsData[9]?.publishedAt)}
         </p>
       </div>
       <div className="col-span-12 lg:col-span-8">
-        <img className="w-full" src={newsData[2]?.urlToImage} alt="thumb" />
-        <p className="mt-5 text-base text-[#5C5955]">{newsData[2]?.author}</p>
+        <img className="w-full" src={newsData[9]?.urlToImage} alt="thumb" />
+        <p className="mt-5 text-base text-[#5C5955]">{newsData[9]?.author}</p>
       </div>
     </div>
   );

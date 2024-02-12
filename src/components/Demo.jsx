@@ -160,3 +160,74 @@
   // }, [search, newsData]);
 
 
+
+
+  //conditional render news image/no image
+  // import React from "react";
+
+// import { useContext } from "react";
+// import { NewsContext } from "../context";
+// import { shortFormatDate } from "../utils/date-utils";
+// import TopHeadline from "./TopHeadline";
+
+// export default function LeftItems() {
+//   const { newsData } = useContext(NewsContext);
+
+//   return (
+//     <>
+//       <div className="col-span-12 grid grid-cols-12 gap-6 self-start xl:col-span-8">
+//         <TopHeadline />
+//         {newsData &&
+//           newsData.map((data) => (
+//             <React.Fragment key={data.title}>
+//               {data.urlToImage !== null ? (
+//                 <>
+//                   <div className="col-span-12 grid grid-cols-12 gap-4 lg:col-span-8">
+//                     <div className="col-span-12 md:col-span-6">
+//                       <a href>
+//                         <h3 className="mb-2.5 text-xl font-bold lg:text-2xl">
+//                           {data.title}
+//                         </h3>
+//                       </a>
+//                       <p className="text-base text-[#292219]">
+//                         {data.description}
+//                       </p>
+//                       <p className="mt-5 text-base text-[#5C5955]">
+//                         {shortFormatDate(data.publishedAt)}
+//                       </p>
+//                     </div>
+//                     <div className="col-span-12 md:col-span-6">
+//                       <img
+//                         className="w-full"
+//                         src={data.urlToImage}
+//                         alt="thumb"
+//                       />
+//                     </div>
+//                   </div>
+//                 </>
+//               ) : (
+//                 <div className="col-span-12 md:col-span-6 lg:col-span-4">
+//                   <div className="col-span-12 md:col-span-4">
+//                     <a href="#">
+//                       <h3 className="mb-2.5 text-xl font-bold lg:text-2xl">
+//                         {data.title}
+//                       </h3>
+//                     </a>
+//                     <p className="text-base text-[#292219]">
+//                       {data.description}
+//                     </p>
+//                     <p className="mt-5 text-base text-[#94908C]">
+//                       {shortFormatDate(data.publishedAt)}
+//                     </p>
+//                   </div>
+//                 </div>
+//               )}
+//             </React.Fragment>
+//           ))}
+//       </div>
+//     </>
+//   );
+// }
+
+
+
