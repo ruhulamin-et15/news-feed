@@ -1,5 +1,9 @@
+import { useContext } from "react";
 import LogoIcon from "../assets/logo_light.png";
+import { NewsContext } from "../context";
 export default function Footer() {
+  const { handleCategoryChange } = useContext(NewsContext);
+
   return (
     <footer className="bg-neutral-800 pb-8 pt-20 text-white sm:pt-24">
       <div className="container mx-auto">
@@ -8,44 +12,72 @@ export default function Footer() {
             <img className="max-md:col-span-2" src={LogoIcon} alt="lws" />
             <ul role="list" className="space-y-4">
               <li>
-                <a href="#" className="text-sm font-semibold">
+                <a href="/" className="text-sm font-semibold">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm font-semibold">
+                <a
+                  href="#"
+                  className="text-sm font-semibold cursor-pointer"
+                  onClick={() => handleCategoryChange("general")}
+                >
                   General
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm font-semibold">
+                <a
+                  href="#"
+                  className="text-sm font-semibold cursor-pointer"
+                  onClick={() => handleCategoryChange("business")}
+                >
                   Business
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm font-semibold">
+                <a
+                  href="#"
+                  className="text-sm font-semibold cursor-pointer"
+                  onClick={() => handleCategoryChange("entertainment")}
+                >
                   Entertainment
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm font-semibold">
+                <a
+                  href="#"
+                  className="text-sm font-semibold cursor-pointer"
+                  onClick={() => handleCategoryChange("health")}
+                >
                   Health
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm font-semibold">
+                <a
+                  href="#"
+                  className="text-sm font-semibold cursor-pointer"
+                  onClick={() => handleCategoryChange("science")}
+                >
                   Science
                 </a>
               </li>
             </ul>
             <ul role="list" className="space-y-4">
               <li>
-                <a href="#" className="text-sm font-semibold">
+                <a
+                  href="#"
+                  className="text-sm font-semibold cursor-pointer"
+                  onClick={() => handleCategoryChange("sports")}
+                >
                   Sports
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm font-semibold">
+                <a
+                  href="#"
+                  className="text-sm font-semibold cursor-pointer"
+                  onClick={() => handleCategoryChange("technology")}
+                >
                   Technology
                 </a>
               </li>

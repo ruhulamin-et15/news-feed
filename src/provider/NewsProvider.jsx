@@ -3,7 +3,7 @@ import { NewsContext } from "../context";
 import { useDebounce, useNewsQuery } from "../hooks";
 
 const NewsProvider = ({ children }) => {
-  const [selectedCategory, setSelectedCategory] = useState("general");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [filteredNewsData, setFilteredNewsData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
