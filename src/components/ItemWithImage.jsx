@@ -23,7 +23,7 @@ export default function ItemWithImage() {
         </p>
       </div>
       <div className="col-span-12 md:col-span-6">
-        <img className="w-full" src={newsData[15]?.urlToImage} alt="thumb" />
+        <img className="w-full" src={newsData[15]?.urlToImage} alt="no image" />
       </div>
     </div>
   );

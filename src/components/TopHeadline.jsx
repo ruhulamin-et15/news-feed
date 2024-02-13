@@ -23,7 +23,7 @@ export default function TopHeadline() {
         </p>
       </div>
       <div className="col-span-12 lg:col-span-8">
-        <img className="w-full" src={newsData[1]?.urlToImage} alt="thumb" />
+        <img className="w-full" src={newsData[1]?.urlToImage} alt="no image" />
         <p className="mt-5 text-base text-[#5C5955]">{newsData[1]?.author}</p>
       </div>
     </div>

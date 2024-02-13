@@ -170,7 +170,6 @@ export default function Footer() {
                 morning..
               </p>
             </div>
-            {/* subscribe */}
             <button className="rounded-full bg-[#00D991] px-7 py-2.5 text-xs font-medium text-[#F1EFEA] hover:opacity-80 lg:text-base">
               Subscribe
             </button>

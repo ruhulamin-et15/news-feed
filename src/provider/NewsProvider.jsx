@@ -9,9 +9,11 @@ const NewsProvider = ({ children }) => {
 
   const debounceSearchQuery = useDebounce(searchQuery, 500);
 
-  const { newsData, loading, error } = useNewsQuery(
-    `http://localhost:8000/v2/top-headlines?category=${selectedCategory}`
-  );
+  const apiUrl = selectedCategory
+    ? `http://localhost:8000/v2/top-headlines?category=${selectedCategory}`
+    : "http://localhost:8000/v2/top-headlines";
+
+  const { newsData, loading, error } = useNewsQuery(apiUrl);
 
   useEffect(() => {
     if (newsData && newsData.articles) {

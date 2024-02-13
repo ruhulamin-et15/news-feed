@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const useNewsQuery = (url) => {
-  //local state
   const [newsData, setNewsData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

@@ -4,8 +4,6 @@ import { shortFormatDate } from "../utils/date-utils";
 import RightHeadline from "./RightHeadline";
 
 export default function RightItems() {
-  // const { newsData } = useNewsQuery(`http://localhost:8000/v2/top-headlines`);
-
   const { newsData, loading } = useContext(NewsContext);
 
   if (loading) {
