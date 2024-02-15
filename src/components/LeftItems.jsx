@@ -67,7 +67,11 @@ export default function LeftItems() {
             </div>
           ))
         ) : (
-          <p className="text-center mx-auto text-3xl">news not found</p>
+          <div className="col-span-12 flex justify-end me-28">
+            <p className="text-3xl border px-10 py-5 border-yellow-500 rounded-md">
+              News not found
+            </p>
+          </div>
         )}
       </div>
     </>

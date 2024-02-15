@@ -8,7 +8,7 @@ const SearchNewsProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const debounceSearchQuery = useDebounce(searchQuery, 1000);
+  const debounceSearchQuery = useDebounce(searchQuery, 500);
 
   const apiUrl = `http://localhost:8000/v2/search?q=${debounceSearchQuery}`;
 
