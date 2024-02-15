@@ -12,7 +12,11 @@ export default function LeftItems() {
   };
 
   const { newsData } = useContext(NewsContext);
-  const { searchResults, searchQuery } = useContext(SearchContext);
+  const {
+    searchResults,
+    searchQuery,
+    loading: searchLoading,
+  } = useContext(SearchContext);
 
   return (
     <>
@@ -66,10 +70,14 @@ export default function LeftItems() {
               </div>
             </div>
           ))
-        ) : (
+        ) : searchLoading ? (
           <div className="col-span-12 flex justify-end me-28">
+            <p className="text-3xl">Searching...</p>
+          </div>
+        ) : (
+          <div className="col-span-12 flex justify-end">
             <p className="text-3xl border px-10 py-5 border-yellow-500 rounded-md">
-              News not found
+              Searched news could not be found
             </p>
           </div>
         )}
