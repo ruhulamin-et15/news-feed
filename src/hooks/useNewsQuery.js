@@ -42,7 +42,6 @@ const useNewsQuery = () => {
   const [error, setError] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState();
   const [filteredNewsData, setFilteredNewsData] = useState("");
-  console.log(filteredNewsData);
 
   useEffect(() => {
     const fetchNewsData = async () => {
@@ -56,7 +55,6 @@ const useNewsQuery = () => {
             throw new Error(`Failed to fetch news data!`);
           }
           const data = await res.json();
-          console.log(data);
           setNewsData((prevData) => ({
             ...prevData,
             [selectedCategory]: {
