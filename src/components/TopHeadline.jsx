@@ -1,9 +1,10 @@
 import { useContext } from "react";
-import { NewsContext } from "../context";
+import { NewsContext, SearchContext } from "../context";
 import { shortFormatDate } from "../utils/date-utils";
 
 export default function TopHeadline() {
-  const { newsData, searchQuery } = useContext(NewsContext);
+  const { newsData } = useContext(NewsContext);
+  const { searchQuery } = useContext(SearchContext);
 
   if (searchQuery.trim() !== "") {
     return null;

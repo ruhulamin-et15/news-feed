@@ -1,11 +1,13 @@
 import Page from "./Page";
-import { NewsProvider } from "./provider";
+import { NewsProvider, SearchNewsProvider } from "./provider";
 
 export default function App() {
   return (
     <>
       <NewsProvider>
-        <Page />
+        <SearchNewsProvider>
+          <Page />
+        </SearchNewsProvider>
       </NewsProvider>
     </>
   );

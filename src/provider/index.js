@@ -1,3 +1,4 @@
 import NewsProvider from "./NewsProvider";
+import SearchNewsProvider from "./SearchNewsProvider";
 
-export { NewsProvider };
+export { NewsProvider, SearchNewsProvider };

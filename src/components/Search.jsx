@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { NewsContext } from "../context";
+import { SearchContext } from "../context";
 
 export default function Search() {
-  const { handleSearch } = useContext(NewsContext);
+  const { handleSearch } = useContext(SearchContext);
 
   const doSearch = (item) => {
     handleSearch(item);
