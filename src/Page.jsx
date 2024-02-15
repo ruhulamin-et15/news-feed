@@ -17,8 +17,8 @@ export default function Page() {
         <>
           <main className="my-10 lg:my-14">
             {newsData.length === 0 ? (
-              <p className="flex text-center text-3xl border-yellow-400 border italic items-center mx-20 justify-center rounded-md min-h-96">
-                search News not found!
+              <p className="flex text-center text-3xl border-yellow-400 border italic items-center mx-28 justify-center rounded-md min-h-96">
+                News not found!
               </p>
             ) : (
               <div className="container mx-auto grid grid-cols-12 gap-8">
