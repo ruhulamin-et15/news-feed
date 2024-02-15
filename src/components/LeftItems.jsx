@@ -12,6 +12,7 @@ export default function LeftItems() {
   };
 
   const { newsData } = useContext(NewsContext);
+
   const {
     searchResults,
     searchQuery,
